@@ -1,0 +1,87 @@
+/* Reset default margins and paddings */
+body,h1, h3, h4, h5, h6, p, ul, ol, li {
+    margin-left: 25%;
+    padding:50px;
+    font-size:17px;
+    background-color:antiquewhite;
+    border :2px solid black;
+    width:600px;
+    height: 300px;
+    border-width: large;
+    box-sizing:inherit;
+    height: 550px;
+    
+    
+  }
+  
+  h2  {
+    margin-right: 30%;
+    padding:10px;
+    font-size:30px;
+  }
+  /* Set a background color */
+  body {
+    background-color:white;
+  }
+  
+  /* Center the content vertically and horizontally */
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Style the donation form */
+  .don form {
+    max-width: 400px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-width: medium;
+  }
+  
+  .don form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .don input[type="text"],
+  .don textarea,
+  .don select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    border-width: medium;
+  }
+  
+  .don input[type="submit"] {
+    background-color:green;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .don input[type="submit"]:hover {
+    background-color:blue;
+  }
+  
+  /* Style form validation errors */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Add some spacing between form elements */
+  .donation-form .form-group {
+    margin-bottom: 15px;
+  }
+  
