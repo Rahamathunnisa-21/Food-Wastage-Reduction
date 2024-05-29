@@ -1,0 +1,68 @@
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color:azure;
+    color:black;
+}
+body {
+    background-color: white;
+}
+.container h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.container h3{
+    text-align: center;
+    color: white;
+}
+
+.container label {
+    display: block;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 8px;
+}
+
+.container input[type="text"],
+.container input[type="password"],
+.container input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    border-radius:4px;
+    box-sizing:border-box;
+}
+
+.container button {
+    background-color:#45a049;
+    color: white;
+    padding: 0.75em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing:border-box;
+}
+
+.container button:hover {
+    background-color:blue;
+}
+
+.links {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color:black;
+    margin-right: 10px;
+}
+
+.no-account {
+    margin-top: 10px;
+}
