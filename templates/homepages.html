@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='homepage.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+    <div  class="topnav">
+      <h2 class="active ">Food  Wastage reduction Application</h2>
+      <a class="active" href="#home">Home</a>
+      <a  href="{{url_for('take')}}">take a look!</a>
+      <a href="{{url_for('donate')}}">Food Donation</a>
+      <a href="{{url_for('inventory')}}">Food Status</a>
+      <a href="{{url_for('user')}}">User</a>
+      <a href="{{url_for('logout')}}">logout</a>
+    </div>
+    <div class="active">
+      <div class="tab-content">
+      <h4>Reduce food waste</h4>
+      <p>
+        Food choices affect your health and the environment<br>
+        .Between 30% and 40% of food in the india is thrown out or<br>
+        wasted each year,according to the Department of Agriculture. <br>
+        That equals about 133 billion pounds and $161 billion.<br>
+        Food loss occurs at every step in the food supply chain <br>
+        from production to consumption Some examples are spoilage during<br>
+        storage and transport,or exposure to insects and rodents,<br>
+        bacteria or mold. Sorting out blemished or imperfect<br>
+        produce results in loss,as does consumers buying more than<br>
+        they need or can consume Not only is edible food wasted, but all<br>
+        the energy,fertilizer and land use that went into to producing<br> 
+        that food is wasted as well.<br>
+      </p>
+      <h5> Join Your Hands Donate Now</h5>
+    </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inventory Management</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1 style="margin-left:30%;font-size: 50px;">Inventory Management</h1>
+        <h2>Available Food Items</h2>
+{% if donations %}
+   <table>
+        <tr>
+            <th>Food Item</th>
+            <th>Quantity</th>
+            <th>Expiration Date</th>
+            <th>Handling Instructions</th>
+            <th>Location</th>
+        </tr>
+        {% for donations in donations %}
+        <tr>
+            <td>{{ donations[0] }}</td>
+            <td>{{ donations[1] }}</td>
+            <td>{{ donations[2] }}</td>
+            <td>{{ donations[3] }}</td>
+            <td>{{ donations[4] }}</td>
+        </tr>    
+        {% endfor %}
+    </table> 
+    <table>
+        <h3 style="font-weight: bold;font-size: 27px;"> Expired food items</h3>
+        <tr>
+            <th>Food Item</th>
+            <th>Quantity</th>
+            <th>Expiration Date</th>
+            <th>Handling Instructions</th>
+        </tr>
+        {% for donations in expiring_items %}
+        <tr>
+            <td>{{ donations[0] }}</td>
+            <td>{{ donations[1] }}</td>
+            <td>{{ donations[2] }}</td>
+            <td>{{ donations[3] }}</td>
+        </tr>    
+        {% endfor %}
+    </table> 
+    <table>
+        <h3 style="font-weight: bold;font-size: 27px;"> Low quantity food items</h3>
+        <tr>
+            <th>Food Item</th>
+            <th>Quantity</th>
+            <th>Expiration Date</th>
+            <th>Handling Instructions</th>
+        </tr>
+        {% for donations in quality %}
+        <tr>
+            <td>{{ donations[0] }}</td>
+            <td>{{ donations[1] }}</td>
+            <td>{{ donations[2] }}</td>
+            <td>{{ donations[3] }}</td>
+        </tr>    
+        {% endfor %}
+    </table> 
+    <table>
+        <h3 style="font-weight: bold;font-size: 27px;"> Expiring food items</h3>
+        <tr>
+            <th>Food Item</th>
+            <th>Quantity</th>
+            <th>Expiration Date</th>
+            <th>Handling Instructions</th>
+        </tr>
+        {% for donations in nearing_expiration_items %}
+        <tr>
+            <td>{{ donations[0] }}</td>
+            <td>{{ donations[1] }}</td>
+            <td>{{ donations[2] }}</td>
+            <td>{{ donations[3] }}</td>
+        </tr>    
+        {% endfor %}
+    </table>     
+{% else %} 
+    <p>No food items available in the inventory.</p>
+{% endif %}        
+</body>
+</html>
